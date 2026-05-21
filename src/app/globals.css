@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass-panel {
+    @apply bg-surface-dark/70 backdrop-blur-xl border-t border-white/10 border-l border-white/5;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-electric-blue via-tertiary to-neon-purple;
+  }
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  @apply bg-electric-blue text-deep-slate;
+}
+
+body {
+  @apply bg-background text-on-surface min-h-screen relative;
+}
